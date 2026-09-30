@@ -1,0 +1,15 @@
+{
+ "T5_PROXIMITY": "STOP. Person close to the machine.",
+ "T5_SEATBELT": "STOP. Fasten your seatbelt.",
+ "T5_SLOPE": "STOP. Slope too steep. Lower the bucket.",
+ "T5_RISK": "STOP. Hold position and look around.",
+ "T4_HOTZONE": "Crew area close. Slow to walking pace.",
+ "T4_SEATBELT": "Seatbelt is off. Buckle up before moving.",
+ "T4_SMOOTH": "Ease off the controls. Movements are getting sharp.",
+ "T4_FATIGUE": "Take a ten-minute break at the next stop.",
+ "T4_VISIBILITY": "Low visibility. Slow down and use the camera.",
+ "T4_SLOPE": "Ground is getting steep. Keep the load low.",
+ "T4_HYD_HOT": "Hydraulics running hot. Ease the load for five minutes.",
+ "T4_RISK_RISING": "Risk is rising. Slow down and check around you.",
+ "T4_TASK_DELAY": "Task running long. Foreman knows. Keep a safe pace."
+}

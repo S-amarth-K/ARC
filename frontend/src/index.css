@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Status + data-viz tokens (dark surface). Tiers reuse the status palette,
+   always paired with a text label so meaning is never colour-alone. */
+:root {
+  --good: #0ca30c;
+  --warning: #fab219;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+  --tier1: #8a8984;
+  --tier2: #3987e5;
+  --tier3: #fab219;
+  --tier4: #ec835a;
+  --tier5: #d03b3b;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --surface: #1a1a19;
+  --grid: #34332f;
+  --ink-2: #c3c2b7;
+  --cat-yellow: #f5b700;
+}
+
+html, body, #root { height: 100%; }
+body { font-family: "Inter", "Segoe UI", system-ui, sans-serif; }
+
+.hazard-stripes {
+  background-image: repeating-linear-gradient(-45deg, #f5b700 0 28px, #111 28px 56px);
+}
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(208,59,59,.7);} 100% { box-shadow: 0 0 0 28px rgba(208,59,59,0);} }
+.pulse-ring { animation: pulse-ring 1.2s ease-out infinite; }
+@keyframes slide-up { from { transform: translateY(24px); opacity: 0 } to { transform: none; opacity: 1 } }
+.slide-up { animation: slide-up .25s ease-out; }
+
+/* Table cells need breathing room between right-aligned numbers and text columns. */
+section table th, section table td { padding-left: 0.5rem; padding-right: 0.5rem; }
